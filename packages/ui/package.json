@@ -1,0 +1,27 @@
+{
+  "name": "@vibes/ui",
+  "version": "0.1.0",
+  "private": true,
+  "sideEffects": false,
+  "main": "./src/components/index.ts",
+  "types": "./src/components/index.ts",
+  "exports": {
+    ".": "./src/components/index.ts",
+    "./button": "./src/components/button.tsx",
+    "./card": "./src/components/card.tsx",
+    "./input": "./src/components/input.tsx"
+  },
+  "peerDependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "dependencies": {
+    "@vibes/utils": "workspace:*",
+    "@radix-ui/react-slot": "^1.1.0",
+    "class-variance-authority": "^0.7.1"
+  },
+  "devDependencies": {
+    "@types/react": "^19",
+    "typescript": "^5.7.0"
+  }
+}
