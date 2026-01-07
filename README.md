@@ -28,7 +28,13 @@ vibes-friends-landing/
 
 ## Getting Started
 
+**Fork** this repo on GitHub
+
 ```bash
+# Clone your fork
+git clone https://github.com/YOUR_USERNAME/vibes-friends.git
+cd vibes-friends
+
 # Install dependencies
 pnpm install
 
@@ -68,39 +74,40 @@ TypeForm-style form builder cloned from [Nader Dabit's open form](https://github
 
 ## Contributing
 
-We welcome contributions! This is an open source project and we love community involvement.
+### Branch Strategy
 
-### Getting Started with Contributions
+We use trunk-based development with protected `main`:
 
-1. **Fork** this repo on GitHub
+```md
+main (protected)
+├── feature/your-feature
+├── fix/bug-description
+├── chore/task-description
+└── docs/what-changed
+```
 
-2. **Clone** your fork
+### Workflow
 
-   ```bash
-   git clone https://github.com/YOUR_USERNAME/vibes-friends.git
-   cd vibes-friends
-   ```
-
-3. **Create a branch**
+1. Create branch from `main`
 
    ```bash
    git checkout -b feature/my-feature
    ```
 
-4. **Make changes** and commit
+2. Make changes and commit
 
    ```bash
    git add .
    git commit -m "feat: add new feature"
    ```
 
-5. **Push** to your fork
+3. Push and open PR
 
    ```bash
-   git push origin feature/my-feature
+   git push -u origin feature/my-feature
    ```
 
-6. **Open a PR** from your fork to `vibes-friends/vibes-friends:main`
+4. Get review, then squash merge to `main`
 
 ### Branch Naming
 
