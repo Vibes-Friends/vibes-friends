@@ -57,7 +57,7 @@ Configure your Supabase credentials in `apps/forms/.env.local`.
 
 Main marketing site at the root domain. Proxies `/forms/*` routes to the forms app.
 
-### Forms (`apps/forms`)
+### Forms (`apps/forms`) - For Internal Team Use
 
 TypeForm-style form builder cloned from [Nader Dabit's open form](https://github.com/dabit3/openform). Features:
 
@@ -68,40 +68,39 @@ TypeForm-style form builder cloned from [Nader Dabit's open form](https://github
 
 ## Contributing
 
-### Branch Strategy
+We welcome contributions! This is an open source project and we love community involvement.
 
-We use trunk-based development with protected `main`:
+### Getting Started with Contributions
 
-```md
-main (protected)
-├── feature/your-feature
-├── fix/bug-description
-├── chore/task-description
-└── docs/what-changed
-```
+1. **Fork** this repo on GitHub
 
-### Workflow
+2. **Clone** your fork
 
-1. Create branch from `main`
+   ```bash
+   git clone https://github.com/YOUR_USERNAME/vibes-friends.git
+   cd vibes-friends
+   ```
+
+3. **Create a branch**
 
    ```bash
    git checkout -b feature/my-feature
    ```
 
-2. Make changes and commit
+4. **Make changes** and commit
 
    ```bash
    git add .
    git commit -m "feat: add new feature"
    ```
 
-3. Push and open PR
+5. **Push** to your fork
 
    ```bash
-   git push -u origin feature/my-feature
+   git push origin feature/my-feature
    ```
 
-4. Get review, then squash merge to `main`
+6. **Open a PR** from your fork to `vibes-friends/vibes-friends:main`
 
 ### Branch Naming
 
