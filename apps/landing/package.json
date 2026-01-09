@@ -12,17 +12,18 @@
   "dependencies": {
     "@vibes/ui": "workspace:*",
     "@vibes/utils": "workspace:*",
-    "next": "15.1.0",
+    "framer-motion": "^12.23.26",
+    "next": "15.1.11",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
-    "@vibes/config": "workspace:*",
+    "@tailwindcss/postcss": "^4.0.0",
     "@types/node": "^22",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "@vibes/config": "workspace:*",
     "tailwindcss": "^4.0.0",
-    "@tailwindcss/postcss": "^4.0.0",
     "typescript": "^5.7.0"
   }
 }

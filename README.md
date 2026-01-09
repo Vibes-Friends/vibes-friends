@@ -1,4 +1,4 @@
-# Vibes Friends
+# Vibe Friends
 
 A community platform for AI and vibe coding enthusiasts. Share builds, learnings, content, participate in events and have fun.
 
