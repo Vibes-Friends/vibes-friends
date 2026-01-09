@@ -49,6 +49,7 @@ export function TerminalText({
     if (!started || !isTyping || currentLineIndex >= lines.length) return;
 
     const currentLine = lines[currentLineIndex];
+    if (!currentLine) return;
 
     if (currentText.length < currentLine.length) {
       const timeout = setTimeout(() => {

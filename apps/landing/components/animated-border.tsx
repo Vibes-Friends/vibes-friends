@@ -32,7 +32,7 @@ export function AnimatedBorder({
         pathLength: {
           delay,
           duration,
-          ease: "easeInOut",
+          ease: "easeInOut" as const,
         },
         opacity: {
           delay,
