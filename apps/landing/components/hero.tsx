@@ -175,7 +175,7 @@ export function Hero() {
               <div className="text-2xl md:text-3xl font-light tracking-wide">
                 {(phase === "text" || phase === "button") && (
                   <TypewriterLine
-                    text="Welcome to Vibes Friends"
+                    text="Welcome to Vibe Friends"
                     typingSpeed={60}
                     delay={0}
                     onComplete={() => setTitleComplete(true)}
