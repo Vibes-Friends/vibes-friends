@@ -10,6 +10,7 @@ import {
 import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import { TypewriterLine } from "./terminal-text";
+import Link from "next/link";
 
 export function Hero() {
   const [phase, setPhase] = useState<
@@ -74,6 +75,20 @@ export function Hero() {
       return () => clearTimeout(timeout);
     }
   }, [taglineComplete]);
+
+  // Handle Enter key press to navigate
+  useEffect(() => {
+    if (phase !== "button") return;
+
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Enter") {
+        window.open("https://t.me/+HzW6cuF0gfg0NjY0", "_blank");
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [phase]);
 
   return (
     <div
@@ -192,7 +207,12 @@ export function Hero() {
                     <button className="group flex items-center gap-3 text-white font-mono text-xl md:text-2xl tracking-wider hover:text-white/80 transition-colors duration-200">
                       <span className="text-white/60">&gt;</span>
                       <span className="border-b border-white/40 group-hover:border-white/70 transition-colors">
-                        Enter
+                        <Link
+                          href="https://t.me/+Fks4J_xdOtxmZTU0"
+                          target="_blank"
+                        >
+                          Enter
+                        </Link>
                       </span>
                       <span className="w-3 h-6 bg-white/80 animate-pulse" />
                     </button>
